@@ -1,0 +1,1912 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Metis_Apdgc_Dialog</class>
+ <widget class="QDialog" name="Metis_Apdgc_Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1186</width>
+    <height>725</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Metis - Parametres APD GC</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+	background-color: rgb(255, 255, 255);
+}</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>861</width>
+     <height>681</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="mainLayout">
+    <property name="sizeConstraint">
+     <enum>QLayout::SetNoConstraint</enum>
+    </property>
+    <property name="leftMargin">
+     <number>5</number>
+    </property>
+    <property name="topMargin">
+     <number>5</number>
+    </property>
+    <property name="rightMargin">
+     <number>5</number>
+    </property>
+    <property name="bottomMargin">
+     <number>5</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetMaximumSize</enum>
+      </property>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_apdgc_maintitle">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Paramètres DTP GC</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QPushButton" name="pushButtonInfo">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>150</horstretch>
+          <verstretch>50</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(60, 60, 60);
+	color: rgb(255, 255, 255);
+	border: 0;
+	border-radius: 5px;
+	padding: 5px;
+}
+QPushButton:focus {
+	background-color: rgb(60, 60, 60);
+	border: 1px solid rgb(255, 255, 255);
+}
+QPushButton:strong:focus {
+	background-color: rgb(230, 230, 230);
+	border: 0;
+}
+QPushButton:pressed {
+	background-color: rgb(200, 200, 200);
+	border: 0;
+}
+QPushButton:hover {
+	background-color: rgb(60, 60, 60);
+	border: 1px solid rgb(255, 255, 255);
+}
+QPushButton:disabled {
+	background-color: rgb(150, 150, 150);
+	border: 0;
+}</string>
+        </property>
+        <property name="text">
+         <string>Informations Générales</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonListPoles">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>100</horstretch>
+          <verstretch>40</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(60, 60, 60);
+	color: rgb(255, 255, 255);
+	border: 0;
+	border-radius: 5px;
+	padding: 5px;
+}
+QPushButton:focus {
+	background-color: rgb(60, 60, 60);
+	border: 1px solid rgb(255, 255, 255);
+}
+QPushButton:strong:focus {
+	background-color: rgb(230, 230, 230);
+	border: 0;
+}
+QPushButton:pressed {
+	background-color: rgb(200, 200, 200);
+	border: 0;
+}
+QPushButton:hover {
+	background-color: rgb(60, 60, 60);
+	border: 1px solid rgb(255, 255, 255);
+}
+QPushButton:disabled {
+	background-color: rgb(150, 150, 150);
+	border: 0;
+}</string>
+        </property>
+        <property name="text">
+         <string>Tableau Appuis</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonOrderPoles">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>100</horstretch>
+          <verstretch>40</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(60, 60, 60);
+	color: rgb(255, 255, 255);
+	border: 0;
+	border-radius: 5px;
+	padding: 5px;
+}
+QPushButton:focus {
+	background-color: rgb(60, 60, 60);
+	border: 1px solid rgb(255, 255, 255);
+}
+QPushButton:strong:focus {
+	background-color: rgb(230, 230, 230);
+	border: 0;
+}
+QPushButton:pressed {
+	background-color: rgb(200, 200, 200);
+	border: 0;
+}
+QPushButton:hover {
+	background-color: rgb(60, 60, 60);
+	border: 1px solid rgb(255, 255, 255);
+}
+QPushButton:disabled {
+	background-color: rgb(150, 150, 150);
+	border: 0;
+}</string>
+        </property>
+        <property name="text">
+         <string>Ordre Appuis</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::MinimumExpanding</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Minimum</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>10</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QFrame" name="frameInfo">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>579</width>
+         <height>294</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetMinAndMaxSize</enum>
+        </property>
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <item row="1" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="sizeConstraint">
+           <enum>QLayout::SetDefaultConstraint</enum>
+          </property>
+          <item>
+           <widget class="QLabel" name="labelPhase">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Phase</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBoxPhase">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QComboBox {
+	background-color: rgb(255, 255, 255);
+	color: black;
+	border: 0;
+	border-radius: 5px;
+}
+QComboBox:focus {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QComboBox:on {
+	background-color: rgb(255, 255, 255);
+	color: black;
+	border: 1px solid rgb(50, 50, 50);
+}
+QComboBox:strong:focus {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QComboBox:pressed {
+	background-color: rgb(200, 200, 200);
+	border: 0;
+}
+QComboBox:hover {
+	background-color: rgb(255, 255, 255);
+	color: black;
+	border: 1px solid rgb(50, 50, 50);
+}
+QComboBox:disabled {
+	background-color: rgb(150, 150, 150);
+	border: 0;
+}
+QComboBox:down-arrow {
+	background-color: rgb(255, 255, 255);
+}
+</string>
+            </property>
+            <property name="editable">
+             <bool>true</bool>
+            </property>
+            <property name="currentText">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="sizeConstraint">
+           <enum>QLayout::SetDefaultConstraint</enum>
+          </property>
+          <item>
+           <widget class="QLabel" name="labelCity">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Commune</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditCity">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	background-color: rgb(255, 255, 255);
+	border: 0;
+	border-radius: 5px;
+}
+QLineEdit:focus {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:strong:focus {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:pressed {
+	background-color: rgb(200, 200, 200);
+	border: 0;
+}
+QLineEdit:hover {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:disabled {
+	background-color: rgb(150, 150, 150);
+	border: 0;
+}</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="placeholderText">
+             <string>Ex. Chinon</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="4" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout_13">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="sizeConstraint">
+           <enum>QLayout::SetDefaultConstraint</enum>
+          </property>
+          <item>
+           <widget class="QLabel" name="labelInseecode">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Code insee</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditInseecode">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	background-color: rgb(255, 255, 255);
+	border: 0;
+	border-radius: 5px;
+}
+QLineEdit:focus {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:strong:focus {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:pressed {
+	background-color: rgb(200, 200, 200);
+	border: 0;
+}
+QLineEdit:hover {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:disabled {
+	background-color: rgb(150, 150, 150);
+	border: 0;
+}</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="placeholderText">
+             <string>Ex. 37072</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="1">
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="sizeConstraint">
+           <enum>QLayout::SetDefaultConstraint</enum>
+          </property>
+          <item>
+           <widget class="QLabel" name="labelAuthor">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Auteur</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditAuthor">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	background-color: rgb(255, 255, 255);
+	border: 0;
+	border-radius: 5px;
+}
+QLineEdit:focus {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:strong:focus {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:pressed {
+	background-color: rgb(200, 200, 200);
+	border: 0;
+}
+QLineEdit:hover {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:disabled {
+	background-color: rgb(150, 150, 150);
+	border: 0;
+}</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="placeholderText">
+             <string>Ex. Florent B.</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="1">
+         <layout class="QVBoxLayout" name="verticalLayout_8">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="sizeConstraint">
+           <enum>QLayout::SetDefaultConstraint</enum>
+          </property>
+          <item>
+           <widget class="QLabel" name="labelAuthorDate">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Date</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditAuthorDate">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	background-color: rgb(255, 255, 255);
+	border: 0;
+	border-radius: 5px;
+}
+QLineEdit:focus {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:strong:focus {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:pressed {
+	background-color: rgb(200, 200, 200);
+	border: 0;
+}
+QLineEdit:hover {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:disabled {
+	background-color: rgb(150, 150, 150);
+	border: 0;
+}</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="placeholderText">
+             <string>Ex. 01/01/2022</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="2">
+         <layout class="QVBoxLayout" name="verticalLayout_9">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="sizeConstraint">
+           <enum>QLayout::SetDefaultConstraint</enum>
+          </property>
+          <item>
+           <widget class="QLabel" name="labelCdcMail">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Email</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditCdcMail">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	background-color: rgb(255, 255, 255);
+	border: 0;
+	border-radius: 5px;
+}
+QLineEdit:focus {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:strong:focus {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:pressed {
+	background-color: rgb(200, 200, 200);
+	border: 0;
+}
+QLineEdit:hover {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:disabled {
+	background-color: rgb(150, 150, 150);
+	border: 0;
+}</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="placeholderText">
+             <string>Ex. mdaumin@camusat.com</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="1">
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="sizeConstraint">
+           <enum>QLayout::SetDefaultConstraint</enum>
+          </property>
+          <item>
+           <widget class="QLabel" name="labelIndex">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Indice</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditIndex">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	background-color: rgb(255, 255, 255);
+	border: 0;
+	border-radius: 5px;
+}
+QLineEdit:focus {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:strong:focus {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:pressed {
+	background-color: rgb(200, 200, 200);
+	border: 0;
+}
+QLineEdit:hover {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:disabled {
+	background-color: rgb(150, 150, 150);
+	border: 0;
+}</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="placeholderText">
+             <string>Ex. A</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="3" column="2">
+         <layout class="QVBoxLayout" name="verticalLayout_12">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="sizeConstraint">
+           <enum>QLayout::SetDefaultConstraint</enum>
+          </property>
+          <item>
+           <widget class="QCheckBox" name="checkBoxBonComm">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Bon de commande</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="4" column="1">
+         <layout class="QVBoxLayout" name="verticalLayout_14">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="sizeConstraint">
+           <enum>QLayout::SetDefaultConstraint</enum>
+          </property>
+          <item>
+           <widget class="QLabel" name="labelTicketJira">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Ticket Jira</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditTicketJira">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	background-color: rgb(255, 255, 255);
+	border: 0;
+	border-radius: 5px;
+}
+QLineEdit:focus {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:strong:focus {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:pressed {
+	background-color: rgb(200, 200, 200);
+	border: 0;
+}
+QLineEdit:hover {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:disabled {
+	background-color: rgb(150, 150, 150);
+	border: 0;
+}</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="placeholderText">
+             <string>Ex. VDLF-000</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="3" column="1">
+         <layout class="QVBoxLayout" name="verticalLayout_11">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="sizeConstraint">
+           <enum>QLayout::SetDefaultConstraint</enum>
+          </property>
+          <item>
+           <widget class="QLabel" name="labelFci">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>FCI</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditFci">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	background-color: rgb(255, 255, 255);
+	border: 0;
+	border-radius: 5px;
+}
+QLineEdit:focus {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:strong:focus {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:pressed {
+	background-color: rgb(200, 200, 200);
+	border: 0;
+}
+QLineEdit:hover {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:disabled {
+	background-color: rgb(150, 150, 150);
+	border: 0;
+}</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="placeholderText">
+             <string>Ex. F00000jjmmaaaa</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="sizeConstraint">
+           <enum>QLayout::SetDefaultConstraint</enum>
+          </property>
+          <item>
+           <widget class="QLabel" name="labelSroname">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Projet</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditSroname">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::StrongFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	background-color: rgb(255, 255, 255);
+	border: 0;
+	border-radius: 5px;
+}
+QLineEdit:focus {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:strong:focus {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:pressed {
+	background-color: rgb(200, 200, 200);
+	border: 0;
+}
+QLineEdit:hover {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:disabled {
+	background-color: rgb(150, 150, 150);
+	border: 0;
+}</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="placeholderText">
+             <string>VDLF-SROXX00</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="3" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout_10">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="sizeConstraint">
+           <enum>QLayout::SetDefaultConstraint</enum>
+          </property>
+          <item>
+           <widget class="QLabel" name="labelZipcode">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Code postal</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditZipcode">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	background-color: rgb(255, 255, 255);
+	border: 0;
+	border-radius: 5px;
+}
+QLineEdit:focus {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:strong:focus {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:pressed {
+	background-color: rgb(200, 200, 200);
+	border: 0;
+}
+QLineEdit:hover {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:disabled {
+	background-color: rgb(150, 150, 150);
+	border: 0;
+}</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="placeholderText">
+             <string>Ex. 37500</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="2">
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="sizeConstraint">
+           <enum>QLayout::SetDefaultConstraint</enum>
+          </property>
+          <item>
+           <widget class="QLabel" name="labelCdc">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Conducteur Travaux</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditCdc">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	background-color: rgb(255, 255, 255);
+	border: 0;
+	border-radius: 5px;
+}
+QLineEdit:focus {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:strong:focus {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:pressed {
+	background-color: rgb(200, 200, 200);
+	border: 0;
+}
+QLineEdit:hover {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:disabled {
+	background-color: rgb(150, 150, 150);
+	border: 0;
+}</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="placeholderText">
+             <string>Ex. Maxime DAUMIN</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="2">
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="sizeConstraint">
+           <enum>QLayout::SetDefaultConstraint</enum>
+          </property>
+          <item>
+           <widget class="QLabel" name="labelCdcTel">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Contact</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditCdcTel">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	background-color: rgb(255, 255, 255);
+	border: 0;
+	border-radius: 5px;
+}
+QLineEdit:focus {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:strong:focus {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:pressed {
+	background-color: rgb(200, 200, 200);
+	border: 0;
+}
+QLineEdit:hover {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(50, 50, 50);
+}
+QLineEdit:disabled {
+	background-color: rgb(150, 150, 150);
+	border: 0;
+}</string>
+            </property>
+            <property name="inputMask">
+             <string>NNNNNNNNNN</string>
+            </property>
+            <property name="placeholderText">
+             <string>Ex. 0712345678</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frameListPoles">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>851</width>
+         <height>251</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayoutListPoles">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayoutMainListPoles">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QPushButton" name="pushButtonFilterAll">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(60, 60, 60);
+	color: rgb(255, 255, 255);
+	border: 0;
+	border-radius: 5px;
+	padding: 5px;
+}
+QPushButton:focus {
+	background-color: rgb(60, 60, 60);
+	border: 1px solid rgb(255, 255, 255);
+}
+QPushButton:strong:focus {
+	background-color: rgb(230, 230, 230);
+	border: 0;
+}
+QPushButton:pressed {
+	background-color: rgb(200, 200, 200);
+	border: 0;
+}
+QPushButton:hover {
+	background-color: rgb(60, 60, 60);
+	border: 1px solid rgb(255, 255, 255);
+}
+QPushButton:disabled {
+	background-color: rgb(150, 150, 150);
+	border: 0;
+}</string>
+              </property>
+              <property name="text">
+               <string>Tous</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButtonFilterVDLF">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(60, 60, 60);
+	color: rgb(255, 255, 255);
+	border: 0;
+	border-radius: 5px;
+	padding: 5px;
+}
+QPushButton:focus {
+	background-color: rgb(60, 60, 60);
+	border: 1px solid rgb(255, 255, 255);
+}
+QPushButton:strong:focus {
+	background-color: rgb(230, 230, 230);
+	border: 0;
+}
+QPushButton:pressed {
+	background-color: rgb(200, 200, 200);
+	border: 0;
+}
+QPushButton:hover {
+	background-color: rgb(60, 60, 60);
+	border: 1px solid rgb(255, 255, 255);
+}
+QPushButton:disabled {
+	background-color: rgb(150, 150, 150);
+	border: 0;
+}</string>
+              </property>
+              <property name="text">
+               <string>VDLF</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButtonFilterOrange">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(60, 60, 60);
+	color: rgb(255, 255, 255);
+	border: 0;
+	border-radius: 5px;
+	padding: 5px;
+}
+QPushButton:focus {
+	background-color: rgb(60, 60, 60);
+	border: 1px solid rgb(255, 255, 255);
+}
+QPushButton:strong:focus {
+	background-color: rgb(230, 230, 230);
+	border: 0;
+}
+QPushButton:pressed {
+	background-color: rgb(200, 200, 200);
+	border: 0;
+}
+QPushButton:hover {
+	background-color: rgb(60, 60, 60);
+	border: 1px solid rgb(255, 255, 255);
+}
+QPushButton:disabled {
+	background-color: rgb(150, 150, 150);
+	border: 0;
+}</string>
+              </property>
+              <property name="text">
+               <string>Orange</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButtonFilterEnedis">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(60, 60, 60);
+	color: rgb(255, 255, 255);
+	border: 0;
+	border-radius: 5px;
+	padding: 5px;
+}
+QPushButton:focus {
+	background-color: rgb(60, 60, 60);
+	border: 1px solid rgb(255, 255, 255);
+}
+QPushButton:strong:focus {
+	background-color: rgb(230, 230, 230);
+	border: 0;
+}
+QPushButton:pressed {
+	background-color: rgb(200, 200, 200);
+	border: 0;
+}
+QPushButton:hover {
+	background-color: rgb(60, 60, 60);
+	border: 1px solid rgb(255, 255, 255);
+}
+QPushButton:disabled {
+	background-color: rgb(150, 150, 150);
+	border: 0;
+}</string>
+              </property>
+              <property name="text">
+               <string>Enedis</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButtonFilterCustom">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(60, 60, 60);
+	color: rgb(255, 255, 255);
+	border: 0;
+	border-radius: 5px;
+	padding: 5px;
+}
+QPushButton:focus {
+	background-color: rgb(60, 60, 60);
+	border: 1px solid rgb(255, 255, 255);
+}
+QPushButton:strong:focus {
+	background-color: rgb(230, 230, 230);
+	border: 0;
+}
+QPushButton:pressed {
+	background-color: rgb(200, 200, 200);
+	border: 0;
+}
+QPushButton:hover {
+	background-color: rgb(60, 60, 60);
+	border: 1px solid rgb(255, 255, 255);
+}
+QPushButton:disabled {
+	background-color: rgb(150, 150, 150);
+	border: 0;
+}</string>
+              </property>
+              <property name="text">
+               <string>Personalisé</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelCurrentFilter">
+              <property name="text">
+               <string>Sélection en cours : </string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Maximum</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetMaximumSize</enum>
+      </property>
+      <item>
+       <widget class="QPushButton" name="pushButtonCancel">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(240, 60, 60);
+	color: rgb(255, 255, 255);
+	
+	border-radius: 5px;
+}
+QPushButton:focus {
+	background-color: rgb(60, 60, 60);
+	border: 1px solid rgb(255, 255, 255);
+}
+QPushButton:strong:focus {
+	background-color: rgb(230, 230, 230);
+	border: 0;
+}
+QPushButton:pressed {
+	background-color: rgb(200, 200, 200);
+	border: 0;
+}
+QPushButton:hover {
+	background-color: rgb(60, 60, 60);
+	border: 2px solid rgb(255, 255, 255);
+}
+QPushButton:disabled {
+	background-color: rgb(150, 150, 150);
+	border: 0;
+}</string>
+        </property>
+        <property name="text">
+         <string>Annuler</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonGenerateLayout_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(60, 60, 60);
+	color: rgb(255, 255, 255);
+	border: 0;
+	border-radius: 5px;
+	padding: 0px 10px;
+}
+QPushButton:focus {
+	background-color: rgb(60, 60, 60);
+	border: 1px solid rgb(255, 255, 255);
+}
+QPushButton:strong:focus {
+	background-color: rgb(230, 230, 230);
+	border: 0;
+}
+QPushButton:pressed {
+	background-color: rgb(200, 200, 200);
+	border: 0;
+}
+QPushButton:hover {
+	background-color: rgb(60, 60, 60);
+	border: 1px solid rgb(255, 255, 255);
+}
+QPushButton:disabled {
+	background-color: rgb(150, 150, 150);
+	border: 0;
+}</string>
+        </property>
+        <property name="text">
+         <string>Genérer Spécifique</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonGenerateLayoutFull">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(60, 60, 60);
+	color: rgb(255, 255, 255);
+	border: 0;
+	border-radius: 5px;
+	padding: 0px 10px;
+}
+QPushButton:focus {
+	background-color: rgb(60, 60, 60);
+	border: 1px solid rgb(255, 255, 255);
+}
+QPushButton:strong:focus {
+	background-color: rgb(230, 230, 230);
+	border: 0;
+}
+QPushButton:pressed {
+	background-color: rgb(200, 200, 200);
+	border: 0;
+}
+QPushButton:hover {
+	background-color: rgb(60, 60, 60);
+	border: 1px solid rgb(255, 255, 255);
+}
+QPushButton:disabled {
+	background-color: rgb(150, 150, 150);
+	border: 0;
+}</string>
+        </property>
+        <property name="text">
+         <string>Genérer Complet</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>lineEditSroname</tabstop>
+  <tabstop>comboBoxPhase</tabstop>
+  <tabstop>lineEditCity</tabstop>
+  <tabstop>lineEditZipcode</tabstop>
+  <tabstop>lineEditInseecode</tabstop>
+  <tabstop>lineEditIndex</tabstop>
+  <tabstop>lineEditAuthor</tabstop>
+  <tabstop>lineEditAuthorDate</tabstop>
+  <tabstop>lineEditFci</tabstop>
+  <tabstop>lineEditTicketJira</tabstop>
+  <tabstop>lineEditCdc</tabstop>
+  <tabstop>lineEditCdcTel</tabstop>
+  <tabstop>lineEditCdcMail</tabstop>
+  <tabstop>checkBoxBonComm</tabstop>
+  <tabstop>pushButtonGenerateLayoutFull</tabstop>
+  <tabstop>pushButtonCancel</tabstop>
+  <tabstop>pushButtonInfo</tabstop>
+  <tabstop>pushButtonListPoles</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

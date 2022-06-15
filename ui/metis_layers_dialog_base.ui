@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Metis_Layers_Dialog</class>
+ <widget class="QDialog" name="Metis_Layers_Dialog">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>433</width>
+    <height>322</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Metis - Couches utiles</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>381</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="leftMargin">
+     <number>10</number>
+    </property>
+    <property name="topMargin">
+     <number>10</number>
+    </property>
+    <property name="rightMargin">
+     <number>10</number>
+    </property>
+    <property name="bottomMargin">
+     <number>10</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="pushButtonOpenSM">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(60, 60, 60);
+	color: rgb(255, 255, 255);
+	border: 0;
+	border-radius: 5px;
+	padding: 5px;
+}
+QPushButton:focus {
+	background-color: rgb(60, 60, 60);
+	border: 1px solid rgb(255, 255, 255);
+}
+QPushButton:strong:focus {
+	background-color: rgb(230, 230, 230);
+	border: 0;
+}
+QPushButton:pressed {
+	background-color: rgb(200, 200, 200);
+	border: 0;
+}
+QPushButton:hover {
+	background-color: rgb(60, 60, 60);
+	border: 2px solid rgb(255, 255, 255);
+}
+QPushButton:disabled {
+	background-color: rgb(150, 150, 150);
+	border: 0;
+}</string>
+      </property>
+      <property name="text">
+       <string>OpenStreetMap</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonCadTS">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(60, 60, 60);
+	color: rgb(255, 255, 255);
+	border: 0;
+	border-radius: 5px;
+	padding: 5px;
+}
+QPushButton:focus {
+	background-color: rgb(60, 60, 60);
+	border: 1px solid rgb(255, 255, 255);
+}
+QPushButton:strong:focus {
+	background-color: rgb(230, 230, 230);
+	border: 0;
+}
+QPushButton:pressed {
+	background-color: rgb(200, 200, 200);
+	border: 0;
+}
+QPushButton:hover {
+	background-color: rgb(60, 60, 60);
+	border: 2px solid rgb(255, 255, 255);
+}
+QPushButton:disabled {
+	background-color: rgb(150, 150, 150);
+	border: 0;
+}</string>
+      </property>
+      <property name="text">
+       <string>Cadastre 37</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonCadQU">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(60, 60, 60);
+	color: rgb(255, 255, 255);
+	border: 0;
+	border-radius: 5px;
+	padding: 5px;
+}
+QPushButton:focus {
+	background-color: rgb(60, 60, 60);
+	border: 1px solid rgb(255, 255, 255);
+}
+QPushButton:strong:focus {
+	background-color: rgb(230, 230, 230);
+	border: 0;
+}
+QPushButton:pressed {
+	background-color: rgb(200, 200, 200);
+	border: 0;
+}
+QPushButton:hover {
+	background-color: rgb(60, 60, 60);
+	border: 2px solid rgb(255, 255, 255);
+}
+QPushButton:disabled {
+	background-color: rgb(150, 150, 150);
+	border: 0;
+}</string>
+      </property>
+      <property name="text">
+       <string>Cadastre 41</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonClose">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>40</horstretch>
+          <verstretch>30</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(240, 60, 60);
+	color: rgb(255, 255, 255);
+	padding: 5px;
+	border-radius: 5px;
+}
+QPushButton:focus {
+	background-color: rgb(60, 60, 60);
+	border: 1px solid rgb(255, 255, 255);
+}
+QPushButton:strong:focus {
+	background-color: rgb(240, 60, 60);
+	border: 0;
+}
+QPushButton:pressed {
+	background-color: rgb(200, 200, 200);
+	border: 0;
+}
+QPushButton:hover {
+	background-color: rgb(60, 60, 60);
+	border: 2px solid rgb(255, 255, 255);
+}
+QPushButton:disabled {
+	background-color: rgb(150, 150, 150);
+	border: 0;
+}</string>
+        </property>
+        <property name="text">
+         <string>Fermer</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
